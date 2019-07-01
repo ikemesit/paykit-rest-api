@@ -8,8 +8,8 @@ export class UsersController {
   }
 
   @Get(':id')
-  getUser(@Param('id') id): string {
-    return `get specific user`;
+  getUser(@Param('id') id: string): string {
+    return `get specific user of id - ${id}`;
   }
 
   @Post()
